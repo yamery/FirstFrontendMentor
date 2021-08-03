@@ -1,0 +1,68 @@
+@import variables
+
+body
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-color: $MainBackground
+    .container
+        margin: 5vw 11vw
+        display: grid
+        grid-template-columns: 50% 50%
+        align-items: center
+        background-color: $CardBackground
+        overflow: hidden
+        border-radius: 2%
+        
+        .ImgMobile
+            display: none
+        .Text
+            padding: 3vw 6vw
+            display: flex
+            flex-direction: column
+
+            h1
+                font-family: $FontInter
+                color: $HeadingStats
+                font-weight: 400, 700
+                span
+                    color: $AccentImg
+            p
+                font-family: $LexendFont 
+                font-size: $FontPSize
+                color: $StatHeadings
+                font-weight: 400
+                padding-right: 10%
+            .Stats
+                display: flex
+                justify-content: space-between
+                padding-top: 20%
+                padding-right: 15%
+                div
+                    display: flex
+                    flex-direction: column
+                    h2
+                        font-family: $FontInter
+                        color: $HeadingStats
+                        font-weight: 400, 700
+                        margin: 0
+                    p
+                        text-transform: uppercase
+                        font-family: $LexendFont
+                        font-size: $FontPSize
+            
+        .ImgDesktop
+            position: relative
+            .overlay
+                position: absolute
+                width: 100%
+                height: 100%                
+                background-color: $ImgOverlay
+            img
+                height: 100%
+                width: 100%
+                display: block
+@import celular

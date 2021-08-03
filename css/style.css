@@ -1,0 +1,170 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #090b1a;
+}
+
+body .container {
+  margin: 5vw 11vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1b1938;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+body .container .ImgMobile {
+  display: none;
+}
+
+body .container .Text {
+  padding: 3vw 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .Text h1 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 400, 700;
+}
+
+body .container .Text h1 span {
+  color: #aa5cdb;
+}
+
+body .container .Text p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  padding-right: 10%;
+}
+
+body .container .Text .Stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20%;
+  padding-right: 15%;
+}
+
+body .container .Text .Stats div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .Text .Stats div h2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 400, 700;
+  margin: 0;
+}
+
+body .container .Text .Stats div p {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+body .container .ImgDesktop {
+  position: relative;
+}
+
+body .container .ImgDesktop .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(121, 8, 191, 0.418);
+}
+
+body .container .ImgDesktop img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 375px) {
+  body .container {
+    margin: 1vh 14vw;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+  }
+  body .container .ImgMobile {
+    display: block;
+    position: relative;
+  }
+  body .container .ImgMobile .overlay {
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(121, 8, 191, 0.418);
+  }
+  body .container .ImgMobile img {
+    height: 100%;
+    width: 100%;
+  }
+  body .container .Text h1 {
+    text-align: center;
+  }
+  body .container .Text p {
+    padding: 0;
+    text-align: center;
+  }
+  body .container .Text .Stats {
+    padding: 0;
+    padding-top: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .Text .Stats h2 {
+    text-align: center;
+  }
+  body .container .Text .Stats .TxtCell {
+    font-size: 0.7rem;
+  }
+  body .container .ImgDesktop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
